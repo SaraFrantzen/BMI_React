@@ -3,6 +3,13 @@ import React from "react";
 const Form = props => {
   return (
     <form onSubmit={props.onSubmitHandler}>
+
+      <label for="cars">Choose method:</label>
+      <select id="method-selector" onChange={props.onMethodSelect}>
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
+      </select>
+
       <label htmlFor="weight">Weight</label>
       <input
         type="number"
@@ -13,6 +20,7 @@ const Form = props => {
         id="weight"
         onChange={props.onChangeHandler}
       />
+
       <label htmlFor="height">Height</label>
       <input
         type="number"
@@ -23,6 +31,7 @@ const Form = props => {
         id="height"
         onChange={props.onChangeHandler}
       />
+
       <button id="calculate">Calculate BMI</button>
     </form>
   );
