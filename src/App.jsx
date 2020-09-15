@@ -22,6 +22,7 @@ class App extends Component {
     );
     this.setState({ bmiValue: bmiValue, bmiMessage: bmiMessage });
   };
+  
   render() {
     return (
       <div>
