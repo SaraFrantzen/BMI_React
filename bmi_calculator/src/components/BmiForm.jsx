@@ -1,15 +1,18 @@
 import React from "react";
+import { Button, Form } from 'semantic-ui-react'
 
-const Form = (props) => {
+const BmiForm = (props) => {
   return (
-    <form onSubmit={props.onSubmitHandler}>
-
+    <Form onSubmit={props.onSubmitHandler}>
+      <Form.Group widths='equal'>
+        <Form.Field>
       <label for="system">Choose your System</label>
       <select id="method-selector" onChange={props.onMethodSelect}>
         <option value="metric">Metric</option>
         <option value="imperial">Imperial</option>
       </select>
-
+      </Form.Field>
+      <Form.Field>
       <label htmlFor="weight">Weight</label>
       <input
         type="number"
@@ -20,6 +23,8 @@ const Form = (props) => {
         id="weight"
         onChange={props.onChangeHandler}
       />
+      </Form.Field>
+      <Form.Field>
       <label htmlFor="height">Height</label>
       <input
         type="number"
@@ -30,8 +35,12 @@ const Form = (props) => {
         id="height"
         onChange={props.onChangeHandler}
       />
-      <button id="calculate">Calculate BMI</button>
-    </form>
+      </Form.Field>
+      </Form.Group>
+      <Button id="calculate" basic color='green'>Calculate</Button>
+      
+    
+    </Form>
   );
 };
-export default Form;
+export default BmiForm;
