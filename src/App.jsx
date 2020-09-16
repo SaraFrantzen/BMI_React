@@ -54,7 +54,7 @@ class App extends Component {
                 bone) and height.<br></br> <br></br>Commonly accepted BMI ranges are underweight
                 (under 18.5 kg/m2), normal weight (18.5 to 25), overweight (25
                 to 30), and obese (over 30).</p>
-             <a href="https://en.wikipedia.org/wiki/Body_mass_index" id="wiki" target="_blank"> Source: Wikipedia</a>  
+             <a href="https://en.wikipedia.org/wiki/Body_mass_index" id="wiki" target="_blank" rel="noopener noreferrer"> Source: Wikipedia</a>  
             </Grid.Column>
           </Grid.Row>
 
