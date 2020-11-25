@@ -6,7 +6,6 @@ We wrote all the logic together and styled/deployed individually
 ### Dependencies
 - Yarn
 - Cypress
-- Jest
 - React
 
 #### Setup
